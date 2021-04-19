@@ -40,7 +40,7 @@ function App() {
   https: return (
     <Layout getQuoteRandom={getQuoteRandom}>
       {quotesAuthor.length !== 0 ? (
-        <PhraseList quotesAuthor={quotesAuthor} />
+        <PhraseList quotesAuthor={quotesAuthor} author={quote.quoteAuthor} />
       ) : (
         <Phrase quote={quote} getQuoteAuthor={getQuoteAuthor} />
       )}

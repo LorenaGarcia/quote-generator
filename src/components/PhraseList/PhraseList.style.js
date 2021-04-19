@@ -17,7 +17,7 @@ const ContainerFlex = styled.div`
   }
 `;
 
-const ContainerFlexFooter = styled.div`
+const NameAuthor = styled.div`
   margin: 2rem;
   margin-right: 8rem;
   margin-left: 11rem;
@@ -26,19 +26,16 @@ const ContainerFlexFooter = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  color: #4f4f4f;
-
-  :hover {
-    color: #f2f2f2;
-    background-color: #333333;
-  }
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333333;
 `;
 
 const Line = styled.hr`
   height: 50vh;
-
-  /* height: 100%; */
   border-left: 8px solid #f7df94;
   margin-right: 2.5rem;
 `;
@@ -71,12 +68,4 @@ const Author = styled.p`
   line-height: 28px;
 `;
 
-export {
-  Container,
-  ContainerFlex,
-  ContainerFlexFooter,
-  Line,
-  Text,
-  Category,
-  Author,
-};
+export { Container, ContainerFlex, NameAuthor, Line, Text, Category, Author };

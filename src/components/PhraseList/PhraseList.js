@@ -2,24 +2,27 @@ import React from "react";
 import {
   Container,
   ContainerFlex,
-  ContainerFlexFooter,
+  NameAuthor,
   Line,
   Text,
-  Author,
-  Category,
 } from "./PhraseList.style";
 
-const PhraseList = ({ quotesAuthor }) => {
+const PhraseList = ({ quotesAuthor, author }) => {
   return (
-    quotesAuthor &&
-    quotesAuthor.map((value) => (
+    <>
       <Container>
-        <ContainerFlex>
-          <Line />
-          <Text>{value.quoteText}</Text>
-        </ContainerFlex>
+        <NameAuthor>{author}</NameAuthor>
       </Container>
-    ))
+      {quotesAuthor &&
+        quotesAuthor.map((value, index) => (
+          <Container key={index}>
+            <ContainerFlex>
+              <Line />
+              <Text>{value.quoteText}</Text>
+            </ContainerFlex>
+          </Container>
+        ))}
+    </>
   );
 };
 
