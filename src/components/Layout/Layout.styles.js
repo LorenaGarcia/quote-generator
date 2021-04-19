@@ -53,4 +53,18 @@ const Footer = styled.div`
   margin-top: 5rem;
 `;
 
-export { Container, Header, Main, Footer };
+const Loading = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  height: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 17px;
+`;
+
+export { Container, Header, Main, Footer, Loading };
