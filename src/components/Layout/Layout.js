@@ -7,7 +7,7 @@ const Layout = ({ children, getQuoteRandom }) => {
       <Header onClick={() => getQuoteRandom()}>
         Random <span className="material-icons">autorenew</span>
       </Header>
-      <Main>{children}</Main>
+      <Main> {children} </Main>
       <Footer>created by Lorraine</Footer>
     </Container>
   );

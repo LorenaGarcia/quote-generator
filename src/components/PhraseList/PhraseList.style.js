@@ -32,12 +32,22 @@ const NameAuthor = styled.div`
   font-size: 36px;
   line-height: 42px;
   color: #333333;
+
+  @media (max-width: 480px) {
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
 `;
 
 const Line = styled.hr`
   height: 50vh;
   border-left: 8px solid #f7df94;
   margin-right: 2.5rem;
+
+  @media (max-width: 480px) {
+    height: 75vh;
+    margin-right: 1.5rem;
+  }
 `;
 
 const Text = styled.p`

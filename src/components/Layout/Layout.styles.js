@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  margin: 0;
   display: grid;
   height: 100vh;
   padding: 2rem 5rem;
@@ -13,7 +14,7 @@ const Container = styled.div`
 
   @media (max-width: 480px) {
     padding: 1rem;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
   }
 `;
@@ -51,6 +52,11 @@ const Footer = styled.div`
   text-align: center;
   color: #828282;
   margin-top: 5rem;
+
+  @media (max-width: 480px) {
+    margin-top: 0;
+    padding-bottom: 5rem;
+  }
 `;
 
 const Loading = styled.div`

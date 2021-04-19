@@ -14,7 +14,7 @@ const ContainerFlex = styled.div`
   align-items: center;
 
   @media (max-width: 480px) {
-    padding: 1rem 0;
+    padding: 0;
   }
 `;
 
@@ -34,12 +34,22 @@ const ContainerFlexFooter = styled.div`
     color: #f2f2f2;
     background-color: #333333;
   }
+
+  @media (max-width: 480px) {
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
 `;
 
 const Line = styled.div`
   height: 100%;
   border-left: 8px solid #f7df94;
   margin-right: 2.5rem;
+
+  @media (max-width: 480px) {
+    margin-right: 1rem;
+  }
 `;
 
 const Text = styled.p`
